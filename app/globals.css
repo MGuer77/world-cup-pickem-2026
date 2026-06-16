@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;900&family=Barlow+Condensed:wght@600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #FBBF24;
+  --gold-dark: #D97706;
+  --pitch-950: #040810;
+  --pitch-900: #060c18;
+  --pitch-800: #0a1628;
+  --pitch-700: #0f1f3a;
+  --pitch-600: #0f1724;
+  --pitch-500: #111827;
+  --border: #1E293B;
+  --text-muted: #64748B;
+  --text-secondary: #94A3B8;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--pitch-900);
+  color: #F1F5F9;
+  font-family: 'Barlow', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+.font-display {
+  font-family: 'Bebas Neue', Impact, sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--pitch-950); }
+::-webkit-scrollbar-thumb { background: #1E3A5F; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold-dark); }
+
+/* Match card hover */
+.match-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.match-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* Animate progress bars */
+@keyframes growBar {
+  from { width: 0%; }
+  to { width: var(--bar-width); }
+}
+
+.progress-bar {
+  animation: growBar 0.7s ease-out forwards;
+}
+
+/* Page fade in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.35s ease-out;
+}
+
+/* Pulse dot for "live" */
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(1.4); }
+}
+.live-dot {
+  animation: pulseDot 1.2s ease-in-out infinite;
+}
+
+/* Light mode overrides */
+.light body {
+  background-color: #F8FAFC;
+  color: #0F172A;
+}

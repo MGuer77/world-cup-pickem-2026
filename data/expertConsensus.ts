@@ -1,0 +1,88 @@
+import type { ExpertConsensus } from "@/types";
+
+export const EXPERT_CONSENSUS: Record<string, ExpertConsensus> = {
+  // Group A
+  m001: { home:52, draw:26, away:22, confidence:74, sources:12 },
+  m002: { home:40, draw:30, away:30, confidence:61, sources:9  },
+  m025: { home:35, draw:28, away:37, confidence:58, sources:8  },
+  m028: { home:48, draw:27, away:25, confidence:70, sources:10 },
+  m053: { home:33, draw:29, away:38, confidence:62, sources:9  },
+  m054: { home:36, draw:32, away:32, confidence:55, sources:7  },
+  // Group B
+  m003: { home:55, draw:24, away:21, confidence:72, sources:11 },
+  m005: { home:28, draw:30, away:42, confidence:65, sources:9  },
+  m026: { home:46, draw:28, away:26, confidence:68, sources:10 },
+  m027: { home:60, draw:22, away:18, confidence:78, sources:12 },
+  m049: { home:44, draw:28, away:28, confidence:63, sources:8  },
+  m050: { home:30, draw:27, away:43, confidence:60, sources:7  },
+  // Group C
+  m006: { home:42, draw:24, away:34, confidence:67, sources:13 },
+  m007: { home:25, draw:26, away:49, confidence:71, sources:10 },
+  m030: { home:38, draw:28, away:34, confidence:62, sources:9  },
+  m031: { home:65, draw:22, away:13, confidence:82, sources:14 },
+  m051: { home:35, draw:25, away:40, confidence:64, sources:10 },
+  m052: { home:56, draw:24, away:20, confidence:74, sources:11 },
+  // Group D
+  m004: { home:50, draw:25, away:25, confidence:70, sources:15 },
+  m008: { home:44, draw:28, away:28, confidence:63, sources:9  },
+  m029: { home:52, draw:26, away:22, confidence:72, sources:12 },
+  m032: { home:38, draw:28, away:34, confidence:61, sources:9  },
+  m059: { home:35, draw:27, away:38, confidence:64, sources:11 },
+  m060: { home:42, draw:28, away:30, confidence:62, sources:8  },
+  // Group E
+  m009: { home:62, draw:22, away:16, confidence:80, sources:14 },
+  m011: { home:40, draw:28, away:32, confidence:66, sources:10 },
+  m034: { home:58, draw:24, away:18, confidence:77, sources:12 },
+  m035: { home:45, draw:28, away:27, confidence:68, sources:9  },
+  m055: { home:28, draw:26, away:46, confidence:65, sources:9  },
+  m056: { home:35, draw:27, away:38, confidence:62, sources:10 },
+  // Group F
+  m010: { home:44, draw:26, away:30, confidence:67, sources:11 },
+  m012: { home:38, draw:30, away:32, confidence:60, sources:8  },
+  m033: { home:48, draw:26, away:26, confidence:69, sources:10 },
+  m036: { home:30, draw:28, away:42, confidence:64, sources:9  },
+  m057: { home:40, draw:28, away:32, confidence:63, sources:9  },
+  m058: { home:28, draw:25, away:47, confidence:68, sources:10 },
+  // Group G
+  m014: { home:46, draw:26, away:28, confidence:68, sources:10 },
+  m016: { home:36, draw:28, away:36, confidence:60, sources:8  },
+  m038: { home:50, draw:24, away:26, confidence:70, sources:11 },
+  m040: { home:30, draw:28, away:42, confidence:63, sources:8  },
+  m065: { home:40, draw:28, away:32, confidence:62, sources:9  },
+  m066: { home:28, draw:25, away:47, confidence:67, sources:10 },
+  // Group H
+  m013: { home:55, draw:24, away:21, confidence:74, sources:12 },
+  m015: { home:34, draw:28, away:38, confidence:62, sources:9  },
+  m037: { home:58, draw:22, away:20, confidence:76, sources:13 },
+  m039: { home:40, draw:28, away:32, confidence:64, sources:9  },
+  m063: { home:28, draw:26, away:46, confidence:65, sources:8  },
+  m064: { home:32, draw:27, away:41, confidence:63, sources:10 },
+  // Group I
+  m017: { home:54, draw:24, away:22, confidence:74, sources:14 },
+  m018: { home:30, draw:28, away:42, confidence:65, sources:9  },
+  m042: { home:58, draw:22, away:20, confidence:78, sources:13 },
+  m043: { home:44, draw:28, away:28, confidence:66, sources:10 },
+  m061: { home:36, draw:27, away:37, confidence:61, sources:9  },
+  m062: { home:48, draw:26, away:26, confidence:70, sources:10 },
+  // Group J
+  m019: { home:55, draw:24, away:21, confidence:75, sources:14 },
+  m020: { home:42, draw:28, away:30, confidence:66, sources:9  },
+  m041: { home:52, draw:26, away:22, confidence:72, sources:13 },
+  m044: { home:32, draw:28, away:40, confidence:63, sources:8  },
+  m071: { home:30, draw:27, away:43, confidence:64, sources:9  },
+  m072: { home:28, draw:24, away:48, confidence:68, sources:11 },
+  // Group K
+  m021: { home:50, draw:26, away:24, confidence:71, sources:11 },
+  m024: { home:32, draw:28, away:40, confidence:63, sources:8  },
+  m045: { home:54, draw:24, away:22, confidence:73, sources:12 },
+  m048: { home:42, draw:28, away:30, confidence:66, sources:9  },
+  m069: { home:46, draw:26, away:28, confidence:67, sources:10 },
+  m070: { home:34, draw:28, away:38, confidence:62, sources:8  },
+  // Group L
+  m022: { home:56, draw:24, away:20, confidence:75, sources:13 },
+  m023: { home:35, draw:28, away:37, confidence:61, sources:8  },
+  m046: { home:58, draw:22, away:20, confidence:77, sources:12 },
+  m047: { home:28, draw:26, away:46, confidence:65, sources:9  },
+  m067: { home:28, draw:24, away:48, confidence:68, sources:10 },
+  m068: { home:40, draw:28, away:32, confidence:63, sources:9  },
+};
